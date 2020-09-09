@@ -1,0 +1,22 @@
+import java.util.Scanner;
+//creating an arraylist
+
+public class MySweetJavaProgram {
+    public static void main (String[] args){
+        Scanner in = new Scanner (System.in);
+        System.out.println("Give us a size");
+        int size = in.nextInt();
+
+        int[] grades = new int[size];
+        System.out.println("Enter " + size + " numbers. press enter after each other");
+        for (int i = 0; i < size; i++){
+            grades[i] = in.nextInt();  //it will keep asking the user to enter the number until the final size is reached
+        }
+        in.close();
+        for (int i = 0; i < size; i++){
+            System.out.println(grades[i]); //this will print out the exact number the user have entered
+        }
+
+    }
+
+}
