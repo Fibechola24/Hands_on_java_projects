@@ -14,7 +14,7 @@ public class MySweetJavaProgram {
         }
         in.close();
         for (int i = 0; i < size; i++){
-            System.out.println(grades[i]); //this will print out the exact number the user have entered
+            System.out.println(grades[i]); //this will print out the exact number the user have entered.
         }
 
     }
