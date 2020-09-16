@@ -1,0 +1,21 @@
+package telusko;
+
+import java.util.Scanner;
+//using the scanner to get input from the user
+
+public class ScannerDemo{
+public static void main(String[]args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Please enter your name: ");
+    String name = scanner.nextLine();
+    System.out.print("\nEnter your course of Study: ");
+    String course = scanner.nextLine();
+
+    System.out.print("\nEnter your age: ");
+    int age = scanner.nextInt();
+
+
+    System.out.println("Your name is " + name + ". You are "+ age + " years old. Your course of study is "+ course);
+
+}
+        }
