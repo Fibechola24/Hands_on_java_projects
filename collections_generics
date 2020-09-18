@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+
+public class CollectionDemo {
+
+    public static void main(String[] args) {
+        Collection values = new ArrayList();
+        values.add(3);
+        values.add(2);
+        System.out.println(values);
+
+        //fetching the value from the interator
+        //collection does not support index number
+      //  Iterator it = values.iterator();
+      //  while (it.hasNext()){
+            //System.out.println(it.next()); //this will print the arraylist one after the other
+       // }
+
+        // a list' have index number unlike collection
+
+      /*  List valueSet = new ArrayList();
+        valueSet.add(2);
+        valueSet.add(3);
+
+        for (int i = 0; i < valueSet.size(); i++){
+            System.out.println("This is for list " + valueSet.get(i));
+        }*/
+        //specify the generic on the type for a collection
+        List<String> names = new ArrayList<>();
+        names.add("Victor");
+        names.add("Stella");
+        for (String str : names){
+            System.out.println(str);
+        }
+
+    }
+}
